@@ -51,3 +51,12 @@ Returns:
   simplified to 8 numeric features for easier serving)
 - Containerize with Docker
 - Deploy to a public URL (Render/Railway)
+
+
+## Running with Docker
+
+1. Build the image:
+ ```docker build -t house-price-predictor .```
+2. Run the container:
+ ```docker run -p 8000:8000 house-price-predictor```
+3. Open `http://127.0.0.1:8000/docs` to test the API
